@@ -24,6 +24,14 @@ if [ "$1" = "--update" ]; then
 fi 
 
 
+## Search index
+if [ "$1" = "--search" ]; then
+    shift
+    grep "$@" "$DIR"/fortunes/* --color=auto
+    exit 0
+fi 
+
+
 ## Call the original fortune passing custom fortunes as arg 
 ## Need temporary extended globbing
 shopt -s extglob  
