@@ -8,7 +8,8 @@ NAME
 
 Either use this repo as a template to store your fortunes, or kindly steal mine:
 ```
-curl | bash # TODO
+curl https://raw.githubusercontent.com/pabsan-0/fortunes/master/fortunes/install.sh | bash -x
+fortune pabsan
 ```
 
 ## Dependencies
