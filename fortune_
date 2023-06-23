@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+
+## Resolve this script location, to locate the fortune files
+## If you call a symlink of it, it still reports the source location 
+## Taken from https://stackoverflow.com/a/246128
+SOURCE=${BASH_SOURCE[0]}
+while [ -L "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
+  SOURCE=$(readlink "$SOURCE")
+  [[ $SOURCE != /* ]] && SOURCE=$DIR/$SOURCE # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
+
+# echo $DIR # debugging print
+
+## Call the original fortune passing custom fortunes as arg 
+## Need temporary extended globbing
+shopt -s extglob  
+fortune "$DIR"/fortunes/!(*.dat) 
+shopt -u extglob

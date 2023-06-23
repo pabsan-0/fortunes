@@ -1,0 +1,21 @@
+Cache git passwords by running `git config credential.helper store` before authenticating.
+%
+Did you know there is a vim plugin for web browsers? You can finally sell your mouse on e-bay!
+%
+Take 5 minutes to set up `pass` instead of taking 3 minutes every day looking for your passwords.
+%
+Jetson boards have a `jtop` utility indexed as `jetson_stats` in PyPI.
+%
+Looking for that code snippet in a README.md? `snap install glow --classic`.
+%
+Enable vim mode on your terminal with `set -o vi`. Restore with `set -o emacs`.
+%
+Bash expansions rock! Try this one: `touch f.txt; cp {f,f_copy}.txt`.
+%
+`echo "This is how to get shell text to clipboard!" | xclip -sel c`
+%
+Forgot a file in your last commit? Add it and run `git commit --amend --no-edit`.
+%
+In bash, press ^J to force a newline in your command.
+%
+Open an in-place editor for your currenti bash command with the sequence ^X ^E.
