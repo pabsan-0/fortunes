@@ -21,7 +21,7 @@ curl | bash # TODO
 
 ### Set up your fortune collection
 
-- Clone this repo to a fixed location. We recommend `/opt/custom_fortunes/collection_name`
+- Clone this repo to a fixed location. We recommend something like `/opt/my_fortunes/pabsan_collection`
 - Right after cloning, run `update` to create a fortune index.
 - Run the `./fortune` executable bash script to call fortunes from your collection:
     - It will look for a `fortunes/` dir next to it and call the original `fortune` passing its files as arguments.
@@ -33,7 +33,7 @@ curl | bash # TODO
 - Create or edit one of the text files in `fortunes/`
 - Fortune text files hold many fortunes, separated by a line with only a `%` in it.
 - To update the index you can:
-    - Run the bare comamand: `strfile -c % bash_tips bash_tips.dat`
+    - Run the bare comamand: `strfile -c % pabsan pabsan.dat`
     - Use my utility script to update all: `./fortune --update`
 - If getting missing characters on your fortunes, you probably need to do this update.
 
