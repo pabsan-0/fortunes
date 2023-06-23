@@ -16,7 +16,7 @@ curl | bash # TODO
 - `sudo apt install fortune`
 
 
-## Quickstart
+## Usage
 
 
 ### Set up your fortune collection
