@@ -18,4 +18,14 @@ Forgot a file in your last commit? Add it and run `git commit --amend --no-edit`
 %
 In bash, press ^J to force a newline in your command.
 %
-Open an in-place editor for your currenti bash command with the sequence ^X ^E.
+Open an in-place editor for your current bash command with the sequence ^X ^E.
+%
+Symlinking args order is the same as copying: `ln -sv existing_file newly_created_link`.
+%
+Use `cd -` to return to a previously visited directory.
+%
+Instead of recalling the command you just wrote with ^R, keep pressing the Up key for a minute.
+%
+You can use emojis 🟢 on the terminal. But please don't.
+%
+Alias `xdg-open` to a simple character such as `,` to quickly open GUIS from the terminal as needed.

@@ -1,8 +1,0 @@
-#! /usr/bin/env bash
-
-rm fortunes/*.dat
-
-for file in ./fortunes/*
-do
-    strfile -c % "$file" "$file".dat
-done
