@@ -23,7 +23,7 @@ fortune pabsan
 ### Set up your fortune collection
 
 - Clone this repo to a fixed location. We recommend something like `/opt/my_fortunes/pabsan_collection`
-- Right after cloning, run `update` to create a fortune index.
+- Right after cloning, run `./fortune --update` to create a fortune index.
 - Run the `./fortune` executable bash script to call fortunes from your collection:
     - It will look for a `fortunes/` dir next to it and call the original `fortune` passing its files as arguments.
     - You can symlink this file anywhere in your system with your fav name.
