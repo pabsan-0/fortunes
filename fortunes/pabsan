@@ -16,7 +16,7 @@ Bash expansions rock! Try this one: `touch f.txt; cp {f,f_copy}.txt`.
 %
 Forgot a file in your last commit? Add it and run `git commit --amend --no-edit`.
 %
-In bash, press ^J to force a newline in your command.
+In bash, press ^V ^J to force a newline in your command.
 %
 Open an in-place editor for your current bash command with the sequence ^X ^E.
 %
