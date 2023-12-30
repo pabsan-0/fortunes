@@ -29,3 +29,18 @@ Instead of recalling the command you just wrote with ^R, keep pressing the Up ke
 You can use emojis 🟢 on the terminal. But please don't.
 %
 Alias `xdg-open` to a simple character such as `,` to quickly open GUIS from the terminal as needed.
+%
+Pipe the output of shell commands to an editor as in `ls | vim -`, then save or yank as usual.
+%
+Keyboard remaps can easily be achieved with `xbindkeys` and `xvkbd`.
+%
+By default, neither `fzf` nor `rg` search hidden files without tweaking some rc files.
+%
+Hidden files can be listed with `ls -A`, usually aliased to `la` in ubuntu.
+%
+Beware! Shell functions using commands such as `find` may be slow at declare time if you mess up.
+%
+Pressing Alt+. on the shell will invoke your latest used argument.
+%
+Besides Up and Down, you can navigate the shell history with Ctrl+P and Ctrl+N.
+%
