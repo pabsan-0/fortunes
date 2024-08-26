@@ -16,7 +16,7 @@ Bash expansions rock! Try this one: `touch f.txt; cp {f,f_copy}.txt`.
 %
 Forgot a file in your last commit? Add it and run `git commit --amend --no-edit`.
 %
-In bash, press ^V ^J to force a newline in your command.
+In bash, press Ctrl+V Ctrl+J to send ^J and force a newline in your command.
 %
 Open an in-place editor for your current bash command with the sequence ^X ^E.
 %
@@ -30,6 +30,58 @@ You can use emojis 🟢 on the terminal. But please don't.
 %
 Alias `xdg-open` to a simple character such as `,` to quickly open GUIS from the terminal as needed.
 %
+It's cool to `poweroff`, but it's cooler to shut down by accident from your shell's history.
+%
+Ctrl+C and ^C are equivalent, but Ctrl+J and ^J aren't. Use `cat -v` to monitor terminal keys.
+%
+Which are those libs my `.so` needs? `lddtree` is here to help.
+%
+Undefined symbol (add random symbol name)? Convert it to human-readable text with `c++filt`.
+%
+Try `nm` if you feel curious about symbols in your object file.
+%
+I know you are used to place your aliases in `~/.bashrc`, create a `~/.bash_aliases` for them.
+%
+Make your tmux session read-only with `:swich-mode -r`. Detach and reattach to restore.
+%
+Redirect stderr to stdout with `2>&1`, then pipe everything with `|`!
+%
+Run `xprop` then click for properties about x windows.
+%
+Get common key names and input events with `xev -event keyboard` or just `xev`.
+%
+`rclone` is a tool to manage your network drives from the comfort of your terminal.
+%
+You dive into nested shells when calling `bash` or `zsh`. Exit back into the parent with ^D. 
+%
+Pause and send a program into the background with ^Z, then do `fg` to bring it back!
+%
+Try pressing Super+1. You can navigate apps faster now!
+%
+Do yourself a favor and enable `fzf` keybindings. Try ^R and ^F.
+%
+Share keyboard and mouse among computers with `barrier`.
+%
+Scan your local network with `nmap -sn 192.168.0.*` to check for available hosts.
+%
+Check your current bandwith usage with `nload`. Press Enter to switch interfaces.
+%
+Measure the actual network speed between two computers with `iperf`.
+%
+Check out all partitions and their mount points with `lsblk`.
+%
+Preview images in your terminal with `chafa`.
+%
+Mount in-network filesystems with `sshfs user@192.168.21.31/home/catec ~/remote`.
+%
+You can insert commands in you shell's history with `history -s foo`.
+%
+To have a line run after your command, you may use `read -s; echo foo`.
+%
+Is your terminal frozen? Ctrl+S to freeze, Ctrl+Q to unfreeze.
+%
+Run a text editor mid-pipe in your shell with `cat .bashrc | vipe | foo.py`.
+%
 Pipe the output of shell commands to an editor as in `ls | vim -`, then save or yank as usual.
 %
 Keyboard remaps can easily be achieved with `xbindkeys` and `xvkbd`.
@@ -42,5 +94,45 @@ Beware! Shell functions using commands such as `find` may be slow at declare tim
 %
 Pressing Alt+. on the shell will invoke your latest used argument.
 %
-Besides Up and Down, you can navigate the shell history with Ctrl+P and Ctrl+N.
+In the shell, pressing Alt+- gets Alt+. direction reversed. Works both ways!
+%
+You can also navigate shell histories with Ctrl+P and Ctrl+N. Pretty ubiquitous!
+%
+The `-S` in the shebang `#!/usr/bin/env -S bash -x` allows bash to have a `-x` argument.
+%
+Remove files with extension other than `.sh` with `rm !(*.sh)`.
+%
+The `cat` command has a `tac` counterpart which does exactly what it implies.
+%
+In bash, you can glob scripts starting with numbers with `[0-5]*.sh`.
+%
+Check whether you have a display available with `xeyes`, even through ssh!
+%
+Bash Ctrl+_ undoes your most recent change to the prompt.
+%
+At the CLI, Ctrl+a and Ctrl+e will jump to start/end of the current line.
+%
+At the CLI, Ctrl+u and Ctrl+k will delete up to the start/end of the current line.
+%
+At the CLI, you can delete words with Ctrl+w and Alt+d, then paste them with Ctrl+y.
+%
+Jump over words quickly with Alt+f and Alt+b at the shell.
+%
+Remove a file from git's history with `git filter-branch --tree-filter 'rm -f my_file' HEAD`.
+%
+Modify your filesystem in a vim buffer with `vidir`.
+%
+Create and preview graphs in vim with `vimdot` then open them with `dot -Txlib`, links included!
+%
+Press Ctrl+x twice in a shell to alternate cursor position.
+%
+Undo at the shell with the Ctrl+X Ctrl+U sequence!
+%
+Use `<<-` rather than `<<` in scripted heredocs to strip tabs before characters.
+%
+In bash, `|&` equals `2>&1 |`, but is way shorter.
+%
+Tilde expansions! ~ equals $HOME, ~+ equals $PWD, ~- equals $OLDPWD.
+%
+Run shell/script lines directly from vim! Try `yy :!<Ctrl-R>"` or `:.w !python3 | vipe`.
 %
