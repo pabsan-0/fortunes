@@ -136,3 +136,5 @@ Tilde expansions! ~ equals $HOME, ~+ equals $PWD, ~- equals $OLDPWD.
 %
 Run shell/script lines directly from vim! Try `yy :!<Ctrl-R>"` or `:.w !python3 | vipe`.
 %
+You may keep githooks outside .git and use them with `git config core.hooksPath .githooks`.
+%
