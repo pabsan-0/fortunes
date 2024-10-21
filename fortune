@@ -12,31 +12,37 @@ done
 DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 # echo $DIR # debugging print
 
+# Can't set inside if-else block so set by default
+# See https://www.reddit.com/r/bash/comments/17yp7xn/shopt_doesnt_setunset_inside_an_ifblock/
+shopt -s extglob
 
-## Update the index for the fortunes
-if [ "$1" = "--update" ]; then
+
+if [ $# -eq 0 ]; then
+    # Call the original fortune passing custom fortunes as arg 
+    # Need extended globbing
+    fortune "$DIR"/fortunes/!(*.dat)
+
+elif [ "$1" = "--update" ]; then
+    # Update the index for the fortunes
     rm "$DIR"/fortunes/*.dat
     for file in "$DIR"/fortunes/*
     do
         strfile -c % "$file" "$file".dat
     done
-    exit 0
-fi 
 
-
-## Search index
-if [ "$1" = "--search" ]; then
+elif [ "$1" = "--search" ]; then
+    # Default search in all fortunes
     shift
     grep "$@" "$DIR"/fortunes/* --color=auto
-    exit 0
+
+elif [ "$1" = "--fzf" ]; then
+    # Interactive search using fzf wrapper
+    # Need extended globbing
+    cat "$DIR"/fortunes/!(*.dat) | fzf
+
+# Bad arguments
+else
+    echo "Usage: ./fortune [ --update | --search query | --fzf ]"
 fi 
 
-
-## Call the original fortune passing custom fortunes as arg 
-## Need temporary extended globbing
-shopt -s extglob  
-fortune "$DIR"/fortunes/!(*.dat)
-shopt -u extglob
-
-
-
+exit 0
