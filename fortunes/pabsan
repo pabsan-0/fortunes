@@ -140,3 +140,9 @@ You may keep githooks outside .git and use them with `git config core.hooksPath 
 %
 Use `less -R` to have less parse and display ANSI color codes.
 %
+Add an [url ""] section in your gitconfig to create URL shorthands when git cloning!
+%
+Python f-strings can print variable names as well! Try doing `print(f"{foo=}")`.
+%
+Bash's builtin `fc` will recall history commands into an editor to run on save. Risky with args!
+%
