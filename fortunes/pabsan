@@ -146,3 +146,7 @@ Python f-strings can print variable names as well! Try doing `print(f"{foo=}")`.
 %
 Bash's builtin `fc` will recall history commands into an editor to run on save. Risky with args!
 %
+Use `:verbose set ft?` to debug further down in vim.
+%
+Deleting text in a password prompt with <Ctrl-U> is always faster than backspacing.
+%
