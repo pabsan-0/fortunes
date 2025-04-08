@@ -150,3 +150,5 @@ Use `:verbose set ft?` to debug further down in vim.
 %
 Deleting text in a password prompt with <Ctrl-U> is always faster than backspacing.
 %
+Stop tracking further changes with `git update-index --assume-unchanged .env`.
+%
