@@ -152,3 +152,5 @@ Deleting text in a password prompt with <Ctrl-U> is always faster than backspaci
 %
 Stop tracking further changes with `git update-index --assume-unchanged .env`.
 %
+Neatly display CSV files on the terminal with `column -t -s ,`.
+%
