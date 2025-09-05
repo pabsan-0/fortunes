@@ -16,6 +16,14 @@ DIR=$( cd -P "$( dirname "$SOURCE" )" >/dev/null 2>&1 && pwd )
 # See https://www.reddit.com/r/bash/comments/17yp7xn/shopt_doesnt_setunset_inside_an_ifblock/
 shopt -s extglob
 
+# Update the index for the fortunes
+_update_dat_files() {
+    rm "$DIR"/fortunes/*.dat
+    for file in "$DIR"/fortunes/*
+    do
+        strfile -c % "$file" "$file".dat
+    done
+}
 
 if [ $# -eq 0 ]; then
     # Call the original fortune passing custom fortunes as arg 
@@ -23,12 +31,7 @@ if [ $# -eq 0 ]; then
     fortune "$DIR"/fortunes/!(*.dat)
 
 elif [ "$1" = "--update" ]; then
-    # Update the index for the fortunes
-    rm "$DIR"/fortunes/*.dat
-    for file in "$DIR"/fortunes/*
-    do
-        strfile -c % "$file" "$file".dat
-    done
+    _update_dat_files
 
 elif [ "$1" = "--search" ]; then
     # Default search in all fortunes
@@ -39,10 +42,27 @@ elif [ "$1" = "--fzf" ]; then
     # Interactive search using fzf wrapper
     # Need extended globbing
     cat "$DIR"/fortunes/!(*.dat) | fzf
+    
+elif [ "$1" = "--edit" ]; then
+    # Interactive search using fzf wrapper
+    # Need extended globbing
+    $EDITOR "$DIR"/fortunes/pabsan
+    _update_dat_files
+
+elif [ "$1" = "--push" ]; then
+    # Quick push to remote
+    cd "$DIR" || exit 1
+
+    _update_dat_files
+    set -x
+    git add .
+    git commit -m "auto-commit: updated files"
+    git push 
+    set +x
 
 # Bad arguments
 else
-    echo "Usage: ./fortune [ --update | --search query | --fzf ]"
+    echo "Usage: ./fortune [ --update | --search query | --fzf | --edit ]"
 fi 
 
 exit 0

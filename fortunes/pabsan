@@ -154,3 +154,9 @@ Stop tracking further changes with `git update-index --assume-unchanged .env`.
 %
 Neatly display CSV files on the terminal with `column -t -s ,`.
 %
+Queue shell jobs via task-spooler or `tsp`.
+%
+Clone from LAN with the format `git clone ssh://alice@10.0.0.42/home/alice/repos/repo.git`.
+%
+Map hostnames to IPs by adding entries in `/etc/hosts`.. Applies instantly!
+%
