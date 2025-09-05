@@ -50,7 +50,7 @@ elif [ "$1" = "--edit" ]; then
     _update_dat_files
 
 elif [ "$1" = "--push" ]; then
-    read -p "Auto-committing and pushin to remote. Continue? [y/N] " answer
+    read -p "Auto-committing and pushing to remote. Continue? [y/N] " answer
     case "$answer" in
         [Yy]*) echo "Continuing...";;
         *)     echo "Aborted."; exit 1;;
