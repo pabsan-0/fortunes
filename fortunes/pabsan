@@ -160,3 +160,7 @@ Clone from LAN with the format `git clone ssh://alice@10.0.0.42/home/alice/repos
 %
 Map hostnames to IPs by adding entries in `/etc/hosts`.. Applies instantly!
 %
+Allow docker without sudo with `sudo usermod -aG docker $USER`.
+%
+In Vim, save without formatting and other on-save events with `:noautocmd w`.
+%
