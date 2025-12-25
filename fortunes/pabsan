@@ -164,3 +164,5 @@ Allow docker without sudo with `sudo usermod -aG docker $USER`.
 %
 In Vim, save without formatting and other on-save events with `:noautocmd w`.
 %
+Use `kcolorchooser` to quickly pop up a color selection GUI.
+%
