@@ -166,3 +166,5 @@ In Vim, save without formatting and other on-save events with `:noautocmd w`.
 %
 Use `kcolorchooser` to quickly pop up a color selection GUI.
 %
+Fzf keybindings include `Alt+c` to search for a path and `cd` into it.
+%
