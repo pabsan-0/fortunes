@@ -168,3 +168,5 @@ Use `kcolorchooser` to quickly pop up a color selection GUI.
 %
 Fzf keybindings include `Alt+c` to search for a path and `cd` into it.
 %
+Force-interrupt hanging SSH sessions with the sequence `Enter ~ .`.
+%
