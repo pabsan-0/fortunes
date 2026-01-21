@@ -152,7 +152,7 @@ Deleting text in a password prompt with <Ctrl-U> is always faster than backspaci
 %
 Stop tracking further changes with `git update-index --assume-unchanged .env`.
 %
-Neatly display CSV files on the terminal with `column -t -s ,`.
+Neatly display CSV files on the terminal with `column -ts ,`.
 %
 Queue shell jobs via task-spooler or `tsp`.
 %
@@ -169,4 +169,6 @@ Use `kcolorchooser` to quickly pop up a color selection GUI.
 Fzf keybindings include `Alt+c` to search for a path and `cd` into it.
 %
 Force-interrupt hanging SSH sessions with the sequence `Enter ~ .`.
+%
+Remember `wireshark` shows packets before the firewall!
 %
