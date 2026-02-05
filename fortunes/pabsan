@@ -158,7 +158,7 @@ Queue shell jobs via task-spooler or `tsp`.
 %
 Clone from LAN with the format `git clone ssh://alice@10.0.0.42/home/alice/repos/repo.git`.
 %
-Map hostnames to IPs by adding entries in `/etc/hosts`.. Applies instantly!
+Map hostnames to IPs by adding entries in `/etc/hosts`. Applies instantly!
 %
 Allow docker without sudo with `sudo usermod -aG docker $USER`.
 %
@@ -171,4 +171,10 @@ Fzf keybindings include `Alt+c` to search for a path and `cd` into it.
 Force-interrupt hanging SSH sessions with the sequence `Enter ~ .`.
 %
 Remember `wireshark` shows packets before the firewall!
+%
+At the terminal `tshark` replaces the `wireshark` GUI.
+%
+Use `tcpdump port 4000` to see all incoming port traffic, adding `-n` to show raw src/dst IPs.
+%
+For passwordless ssh, create and share a key with `ssh-keygen && ssh-copy-id user@host`.
 %
