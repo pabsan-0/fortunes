@@ -178,3 +178,5 @@ Use `tcpdump port 4000` to see all incoming port traffic, adding `-n` to show ra
 %
 For passwordless ssh, create and share a key with `ssh-keygen && ssh-copy-id user@host`.
 %
+Use PEP 508 markers, e.g. `torch; "tegra" in platform_release` for Jetson-only installs.
+%
