@@ -180,3 +180,9 @@ For passwordless ssh, create and share a key with `ssh-keygen && ssh-copy-id use
 %
 Use PEP 508 markers, e.g. `torch; "tegra" in platform_release` for Jetson-only installs.
 %
+Open GRUB with UEFI pressing Esc during vendor's, non-distro, logo.
+%
+Seamlessly use a Xbox controller on linux with `xone`.
+%
+List GPUs with `MESA_VK_DEVICE_SELECT=list vulkaninfo`. Use those IDs for proton launch opts!
+%
