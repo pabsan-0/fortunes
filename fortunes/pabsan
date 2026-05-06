@@ -52,7 +52,7 @@ Get common key names and input events with `xev -event keyboard` or just `xev`.
 %
 `rclone` is a tool to manage your network drives from the comfort of your terminal.
 %
-You dive into nested shells when calling `bash` or `zsh`. Exit back into the parent with ^D. 
+You dive into nested shells when calling `bash` or `zsh`. Exit back into the parent with ^D.
 %
 Pause and send a program into the background with ^Z, then do `fg` to bring it back!
 %
@@ -187,4 +187,10 @@ Seamlessly use a Xbox controller on linux with `xone`.
 List GPUs with `MESA_VK_DEVICE_SELECT=list vulkaninfo`. Use those IDs for proton launch opts!
 %
 Quickly connect to wifi with `nmcli connection up my_network`.
+%
+Merge PDFs! `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=m.pdf b.pdf c.pdf`
+%
+Crop the tree view to the last n commits using `git adog -5`.
+%
+Open a PR directly in the browser with `gh pr view --web`.
 %
