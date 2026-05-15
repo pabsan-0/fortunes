@@ -194,3 +194,5 @@ Crop the tree view to the last n commits using `git adog -5`.
 %
 Open a PR directly in the browser with `gh pr view --web`.
 %
+Patch with `git diff > foo.patch` then `patch -p1 < foo.patch` to strip prefixes `a/ b/`.
+%
