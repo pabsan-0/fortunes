@@ -196,3 +196,5 @@ Open a PR directly in the browser with `gh pr view --web`.
 %
 Patch with `git diff > foo.patch` then `patch -p1 < foo.patch` to strip prefixes `a/ b/`.
 %
+See logs for system's last poweroff with `journalctl -e -b -1` (pager end, boot -1).
+%
