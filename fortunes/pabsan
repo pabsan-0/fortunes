@@ -198,3 +198,5 @@ Patch with `git diff > foo.patch` then `patch -p1 < foo.patch` to strip prefixes
 %
 See logs for system's last poweroff with `journalctl -e -b -1` (pager end, boot -1).
 %
+Drop changes to QF on Vim's Fugitive with `:Git difftool main`.
+%
