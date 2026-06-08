@@ -200,3 +200,5 @@ See logs for system's last poweroff with `journalctl -e -b -1` (pager end, boot 
 %
 Drop changes to QF on Vim's Fugitive with `:Git difftool main`.
 %
+Get the last 20MB worth of lines from a file with `tail -c 20m foo`.
+%
