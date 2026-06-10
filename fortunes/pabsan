@@ -202,3 +202,9 @@ Drop changes to QF on Vim's Fugitive with `:Git difftool main`.
 %
 Get the last 20MB worth of lines from a file with `tail -c 20m foo`.
 %
+Filter output to show different columns with `| awk '$1 != $2'`. Or just master `awk`.
+%
+Seek the nearest commit by message with `git show :/"foo"` or the safer `git show HEAD^{/"foo"}`.
+%
+The shell operators for file checking I always forget are listed under `man test`.
+%
