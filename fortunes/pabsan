@@ -256,3 +256,5 @@ Anything is possible with the shebang `#!/usr/bin/env -S sh -c '"$0" "$@"'`!
 %
 You can tell a Docker container by their `/.dockerenv` file.
 %
+Is `xdg-open` choosing the wrong program? See `curl cheat.sh/xdg-mime`.
+%
