@@ -120,7 +120,7 @@ Jump over words quickly with Alt+f and Alt+b at the shell.
 %
 Remove a file from git's history with `git filter-branch --tree-filter 'rm -f my_file' HEAD`.
 %
-Modify your filesystem in a vim buffer with `vidir`.
+Modify your filesystem in a vim buffer with `vidir`. Better yet, use the more recent `edir`!
 %
 Create and preview graphs in vim with `vimdot` then open them with `dot -Txlib`, links included!
 %
@@ -207,4 +207,52 @@ Filter output to show different columns with `| awk '$1 != $2'`. Or just master 
 Seek the nearest commit by message with `git show :/"foo"` or the safer `git show HEAD^{/"foo"}`.
 %
 The shell operators for file checking I always forget are listed under `man test`.
+%
+Print a whole project with `tail -n +1 */*`, showing file title and contents.
+%
+Beware! `chattr +i foo/` is not recursive without `-R`.
+%
+In git commands, `commit^!` will expand to `commit~ commit`.
+%
+In git, `HEAD~` defaults to `HEAD~1`.
+%
+The mappings `zR`/`zM` will open/close all your folds in Vim.
+%
+`echo performance | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor`.
+%
+`fd` is a faster and more user-friendly complement to `find`.
+%
+Keep the 3rd col of output with `choose 3`, or `awk '{printf $3}'`.
+%
+Automatically assign --fixup commit targets via `git-absorb`.
+%
+Inspect dotgraphs with hjkl controls via `dot -Tpdf "$1" | zathura -`.
+%
+Consider defaulting to Vim's built-in grep engine `:vimgrep // **/*.c`.
+%
+The shell command `ts` timestamps every line piped into it.
+%
+Pipe `yes` to interactive commands e.g. `yes | apt install foobar`.
+%
+Compile just a bit of rust using `cargo build -p gst-plugin-dashsink2`.
+%
+Drag-and-drop easily when at the terminal using `ripdrag`.
+%
+A list of recent logins can be found with `last`.
+%
+Detach from an interactive Docker container issuing Ctrl-P Ctrl-Q.
+%
+`git fetch --all --prune` removes local branches not on remote.
+%
+Stash with context information via `git stash -m "attempt on foo"`.
+%
+Log larger using `rotatelogs`.
+%
+Run arbitrary commands when files change: `entr`.
+%
+Export a compressed worktree via `git archive`.
+%
+Anything is possible with the shebang `#!/usr/bin/env -S sh -c '"$0" "$@"'`!
+%
+You can tell a Docker container by their `/.dockerenv` file.
 %
